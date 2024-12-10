@@ -17,4 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/generate-pdf', [App\Http\Controllers\PdfController::class, 'generatePDF'])->name('generatePDF');
 
